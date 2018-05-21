@@ -8,7 +8,7 @@ namespace prjWin_NationalBank_Rm
 {
     /// <summary>
     /// Ricardo Mendoza
-    /// Strategy Design Patern
+    /// National Bank
     /// Institut Teccart
     /// www.teccart.qc.ca
     /// Montréal, Québec

@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 using System.IO; // file stream
@@ -29,7 +23,10 @@ namespace prjWin_NationalBank_Rm
         /// </summary>
         System.Timers.Timer CLock = new System.Timers.Timer();
         int h, m, s;
-        int interval = 100;
+        /// <summary>
+        /// Timer speed
+        /// </summary>
+        int interval = 1000;
         /// <summary>
         /// Bank Object -> Initialize
         /// </summary>
@@ -110,6 +107,19 @@ namespace prjWin_NationalBank_Rm
         /// Varaible counter in the btnBwrAgencies and btnFwrAgencies
         /// </summary>
         public int agenciesCnc;
+
+        /// <summary>
+        ///  Variable to write a deposit receipt in the Strategy design pattern
+        /// </summary>
+        public clsReceiptDepositPdf WritingDepositPdf =  new clsReceiptDepositPdf();
+        /// <summary>
+        ///  Variable to write a withdraw receipt in the Strategy design pattern
+        /// </summary>
+        public clsReceiptWithdrawPdf WritingWithdrawPdf = new clsReceiptWithdrawPdf();
+        /// <summary>
+        ///  Variable to write a consult receipt in the Strategy design pattern
+        /// </summary>
+        public clsReceiptConsultPdf WritingConsultPdf = new clsReceiptConsultPdf();
 
         private void frmBank_Load(object sender, EventArgs e)
         {
@@ -207,7 +217,11 @@ namespace prjWin_NationalBank_Rm
             groupBoxAdminClients.Enabled = groupBoxAdminAdviser.Enabled = groupBoxAdminPaidAccount.Enabled = groupBoxAdminUnPaidAccount.Enabled = false;
         }
 
-        // starts the trtansaction with the client number
+        /// <summary>
+        /// starts the trtansaction with the client number
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnTransactionsClientNumber_Click(object sender, EventArgs e)
         {
             try
@@ -231,6 +245,21 @@ namespace prjWin_NationalBank_Rm
                 MessageBox.Show(ex.Message);
             }
         } // end btnTransactionsClientNumber
+
+        public static clsClient  fncActualClient()
+        {
+            return actualClient;
+        }
+
+
+        /// <summary>
+        /// Function to transfer actual vListDirecteurs to others classes need to be static
+        /// </summary>
+        /// <returns>myBank.vListDirecteurs</returns>
+        //public static clsListDirecteurs fncGetvListDirecteurs()
+        //{
+        //    return myBank.vListDirecteurs;
+        //}
 
         /// <summary>
         /// Select agency in the transaction tab
@@ -346,13 +375,18 @@ namespace prjWin_NationalBank_Rm
 
         }// end btnTransactionsPaidAccount
 
-        // make the transactions
+
+        /// <summary>
+        /// make the transactions
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnTransactionsTransaction_Click(object sender, EventArgs e)
         {
             try
             {
                 /// <summary>
-                /// actualUnpaidAccount
+                /// Deposit : radTransactionsDeposit : actualUnpaidAccount
                 /// </summary>
                 if (radTransactionsDeposit.Checked && actualUnpaidAccount.vType == lblTransactionsDisplayAccountType.Text)
                 {
@@ -374,9 +408,15 @@ namespace prjWin_NationalBank_Rm
                     clsDataSave.fncWriteUnPaidAccountsinXML();
                     lblInfo.Text = actualUnpaidAccount.fncPrintBalanceUnPaidAccount();//funcion q viene de la clsAcount
                     MessageBox.Show(deposit.ToString() + " $ has been deposited in the Unpaid Account !");
+
+                    /// <summary>
+                    /// writing PDF
+                    /// </summary>
+                    fncMessageBoxWritePdf();
+
                 }
                 /// <summary>
-                /// actualPaidAccount
+                /// Deposit : radTransactionsDeposit : actualPaidAccount
                 /// </summary>
                 else if (radTransactionsDeposit.Checked && actualPaidAccount.vType == lblTransactionsDisplayAccountType.Text)
                 {
@@ -398,9 +438,14 @@ namespace prjWin_NationalBank_Rm
                     clsDataSave.fncWritePaidAccountsinXML();
                     lblInfo.Text = actualPaidAccount.fncPrintBalancePaidAccount();//funcion q viene de la clsAcount
                     MessageBox.Show(deposit.ToString() + " $ has been deposited in the Paid Accoun!");
+
+                    /// <summary>
+                    /// writing PDF
+                    /// </summary>
+                    fncMessageBoxWritePdf();
                 }
                 /// <summary>
-                /// radTransactionsWithdraw : actualUnpaidAccount
+                /// Withdraw : radTransactionsWithdraw : actualUnpaidAccount
                 /// </summary>
                 else if (radTransactionsWithdraw.Checked && actualUnpaidAccount.vType == lblTransactionsDisplayAccountType.Text)
                 {
@@ -432,9 +477,14 @@ namespace prjWin_NationalBank_Rm
                     clsDataSave.fncWriteUnPaidAccountsinXML();
                     lblInfo.Text = actualUnpaidAccount.fncPrintBalanceUnPaidAccount();//funcion q viene de la clsAcount
                     MessageBox.Show(montant.ToString() + " $ has been withdrawen in the Unpaid Account !");
+
+                    /// <summary>
+                    /// writing PDF
+                    /// </summary>
+                    fncMessageBoxWritePdf();
                 }
                 /// <summary>
-                /// actualPaidAccount
+                /// Withdraw : radTransactionsWithdraw : actualPaidAccount
                 /// </summary>
                 else if (radTransactionsWithdraw.Checked && actualPaidAccount.vType == lblTransactionsDisplayAccountType.Text)
                 {
@@ -466,6 +516,11 @@ namespace prjWin_NationalBank_Rm
                     clsDataSave.fncWritePaidAccountsinXML();
                     lblInfo.Text = actualPaidAccount.fncPrintBalancePaidAccount();//funcion q viene de la clsAcount
                     MessageBox.Show(montant.ToString() + " $ has been withdrawen  in the Paid Accoun!");
+
+                    /// <summary>
+                    /// writing PDF
+                    /// </summary>
+                    fncMessageBoxWritePdf();
                 }
 
                 /// <summary>
@@ -474,6 +529,11 @@ namespace prjWin_NationalBank_Rm
                 else if (radTransactionsConsult.Checked && actualPaidAccount.vType == lblTransactionsDisplayAccountType.Text)
                 {
                     lblInfo.Text = actualPaidAccount.fncPrintBalancePaidAccount();//funcion q viene de la clsAcount
+
+                    /// <summary>
+                    /// writing PDF
+                    /// </summary>
+                    fncMessageBoxWritePdf();
                 }
                 /// <summary>
                 /// actualUnpaidAccount
@@ -481,18 +541,77 @@ namespace prjWin_NationalBank_Rm
                 else if (radTransactionsConsult.Checked && actualUnpaidAccount.vType == lblTransactionsDisplayAccountType.Text)
                 {
                     lblInfo.Text = actualUnpaidAccount.fncPrintBalanceUnPaidAccount();//funcion q viene de la clsAcount
+
+                    /// <summary>
+                    /// writing PDF
+                    /// </summary>
+                    fncMessageBoxWritePdf();
                 }
-                txtTransactionsDeposit.Clear();
-                txtTransactionsWithdraw.Clear();
-                txtTransactionsDeposit.Visible = false;
-                txtTransactionsWithdraw.Visible = false;
-                radTransactionsConsult.Checked = true;
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
         } // End btnTransactionsTransaction
+
+        /// <summary>
+        /// Shows a message box button to write a pdf
+        /// </summary>
+        public void fncMessageBoxWritePdf()
+        {
+            // Initializes the variables to pass to the MessageBox.Show method.
+            string message = "Would you like to print a receipt ?";
+            string caption = "Write PDF";
+            MessageBoxButtons buttons = MessageBoxButtons.YesNo;
+            DialogResult result;
+
+            // Displays the MessageBox.
+            result = MessageBox.Show(this, message, caption, buttons,
+                            MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                // Writing the PDF.
+                try
+                {
+                    if (radTransactionsDeposit.Checked)
+                    {
+                        WritingDepositPdf.fncWriteDepositPdf();
+                    }
+                    if (radTransactionsWithdraw.Checked)
+                    {
+                        WritingWithdrawPdf.fncWriteWithdrawPdf();
+                    }
+                    if (radTransactionsConsult.Checked)
+                    {
+                        WritingConsultPdf.fncWriteConsultPdf();
+                    }
+                    /// <summary>
+                    /// init transactions type
+                    /// </summary>
+                    fncInitTransactionTextBoxes();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        } // end message box button
+
+        /// <summary>
+        /// Init the transaction text boxes 
+        /// </summary>
+        public void fncInitTransactionTextBoxes()
+        {
+            txtTransactionsDeposit.Clear();
+            txtTransactionsWithdraw.Clear();
+            txtTransactionsDeposit.Visible = false;
+            txtTransactionsWithdraw.Visible = false;
+
+            radTransactionsConsult.Checked = true;
+            radTransactionsWithdraw.Enabled = true;
+            radTransactionsConsult.Enabled = true;
+        } // end init the transaction text boxes
 
         // radio controls in the transaction : deposit
         private void radTransactionsDeposit_CheckedChanged(object sender, EventArgs e)
@@ -552,14 +671,17 @@ namespace prjWin_NationalBank_Rm
         {
             try
             {
-                Document doc = new Document(iTextSharp.text.PageSize.LETTER, 100, 100, 50, 50);
-                PdfWriter writingPdf = PdfWriter.GetInstance(doc, new FileStream("NationalBank.pdf", FileMode.Create));
-                doc.Open(); // Open document to write
-                DateTime today = clsDataSource.fncTodayDate();
-                Paragraph paregraph = new Paragraph("National Bank of Canada : " + "\n" + "Date : " + today.ToString() + "\n" + actualClient.fncDisplayHuman());
-                doc.Add(paregraph);
-                doc.Close(); // Close document
-                MessageBox.Show("a PDF has been written");
+                fncInitTransactionTextBoxes();
+                //Document doc = new Document(iTextSharp.text.PageSize.LETTER, 100, 100, 50, 50);
+                //PdfWriter writingPdf = PdfWriter.GetInstance(doc, new FileStream("NationalBank.pdf", FileMode.Create));
+                //doc.Open(); // Open document to write
+                //DateTime today = clsDataSource.fncTodayDate();
+                //Paragraph paregraph = new Paragraph("National Bank of Canada : " + "\n" + "Date : " + today.ToString() + "\n" + actualClient.fncDisplayHuman());
+                //doc.Add(paregraph);
+                //doc.Close(); // Close document
+                //MessageBox.Show("a PDF has been written");
+
+
             }
             catch (Exception ex)
             {
@@ -3244,5 +3366,5 @@ namespace prjWin_NationalBank_Rm
         {
             return actualClient.vListUnpaidAccounts;
         } // end transfer the un paid accoun list
-    }
+    } // end public partial class frmBank
 }

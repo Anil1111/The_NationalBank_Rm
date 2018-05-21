@@ -515,7 +515,7 @@
             this.btnCreatePDF.Name = "btnCreatePDF";
             this.btnCreatePDF.Size = new System.Drawing.Size(75, 23);
             this.btnCreatePDF.TabIndex = 20;
-            this.btnCreatePDF.Text = "PDF >>>";
+            this.btnCreatePDF.Text = "Next >>>";
             this.btnCreatePDF.UseVisualStyleBackColor = true;
             this.btnCreatePDF.Click += new System.EventHandler(this.btnCreatePDF_Click);
             // 
@@ -610,7 +610,7 @@
             this.btnTransactionsTransaction.Name = "btnTransactionsTransaction";
             this.btnTransactionsTransaction.Size = new System.Drawing.Size(121, 30);
             this.btnTransactionsTransaction.TabIndex = 5;
-            this.btnTransactionsTransaction.Text = "Next  >> ";
+            this.btnTransactionsTransaction.Text = "Info  >> ";
             this.btnTransactionsTransaction.UseVisualStyleBackColor = true;
             this.btnTransactionsTransaction.Click += new System.EventHandler(this.btnTransactionsTransaction_Click);
             // 
