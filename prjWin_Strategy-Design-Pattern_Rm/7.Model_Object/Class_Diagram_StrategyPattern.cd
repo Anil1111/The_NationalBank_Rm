@@ -290,7 +290,7 @@
       <HashCode>AAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>StrategyDesignPattern_PDF\Implements-concretStrategy\clsWriteDepositPdf.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Position="0.2" />
+    <Lollipop Position="0.1" />
   </Class>
   <Class Name="prjWin_NationalBank_Rm.clsWriteDocumentPdf">
     <Position X="18.5" Y="3.75" Width="2" />
@@ -315,7 +315,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="prjWin_NationalBank_Rm.clsWriteWithdrawPdf">
-    <Position X="23.25" Y="7" Width="2" />
+    <Position X="23.25" Y="7.25" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>StrategyDesignPattern_PDF\Implements-concretStrategy\clsWriteWithdrawPdf.cs</FileName>
@@ -323,11 +323,12 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="prjWin_NationalBank_Rm.clsWriteConsultPdf">
-    <Position X="24.5" Y="8.75" Width="2" />
+    <Position X="24.5" Y="9" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>StrategyDesignPattern_PDF\Implements-concretStrategy\clsWriteConsultPdf.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="prjWin_NationalBank_Rm.clsReceiptWithdrawPdf">
     <Position X="18.5" Y="8" Width="2" />
@@ -352,7 +353,7 @@
     </TypeIdentifier>
   </Class>
   <Interface Name="prjWin_NationalBank_Rm.IntWritePdf">
-    <Position X="22" Y="3.75" Width="1.5" />
+    <Position X="22" Y="3.75" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>StrategyDesignPattern_PDF\Strategy\IntWritePdf.cs</FileName>
