@@ -1,11 +1,15 @@
 # The National Bank
-# ======================
+# ============
+
+## Project : prjWin_NationalBank_Rm
 Été-2017
 
 
 The objective : To understand the class relationships and the concepts of object oriented programming
 
 ## Pour commencer
+
+![Texto alternativo](/img/classes.jpg "Título alternativo")
 
 Dans la racine de ce projet se trouve un fichier config.js contenant les paremètres globaux de notre application, comme les paramètres de notre connexion à la base de données, le port de notre application, les messages d'erreurs du back-end, etc.
 
