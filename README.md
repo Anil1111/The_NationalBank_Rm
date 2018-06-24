@@ -19,13 +19,14 @@ We have these classes and their propierties.
 ![Summary of classes](/img/organization.jpg "Summary of classes")
 
 We must complete the following class diagram using the required symbols to specify 
-abstraction, encapsulation, inheritance, and polymorphism.
+ *abstraction, encapsulation, inheritance, and polymorphism.*
+
 
 ![Class Diagram](/img/classes.jpg "Class Diagram")
 
 We did the analysis and we get the next diagram. 
 
-![Class Diagram Developed](/img/classes.jpg "Class Diagram Developed")
+![Class Diagram Developed](/img/Class_Diagram_StrategyPattern.jpg "Class Diagram Developed")
 
 We implemented with C# and Visual Studio the abstract classes account and person and all their offspring.
 
@@ -121,10 +122,9 @@ https://gitlab.com/AndyDelRisco/ConservatoireEMRTM.git.
 
 Historique de versions : https://gitlab.com/AndyDelRisco/ConservatoireEMRTM/commits/master
 
-## Auteurs
+## Auteur
 
-* **Andy Del Risco Manzanares** - *Analyste programmeur senior* 
-* **Ricardo Mendoza** - *Programmeur* 
+* **Ricardo Mendoza** - *Analyste programmeur Jr* 
 
 ## Licence
 
