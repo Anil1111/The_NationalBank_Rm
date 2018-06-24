@@ -86,7 +86,7 @@
     <Compile Include="StrategyDesignPattern_PDF\Context\clsReceiptWithdrawPdf.cs" />
     <Compile Include="StrategyDesignPattern_PDF\Implements-concretStrategy\clsWriteConsultPdf.cs" />
     <Compile Include="StrategyDesignPattern_PDF\Implements-concretStrategy\clsWriteDepositPdf.cs" />
-    <Compile Include="StrategyDesignPattern_PDF\Implements-concretStrategy\clsWriteDocumentPdf.cs" />
+    <Compile Include="StrategyDesignPattern_PDF\Context\clsWriteDocumentPdf.cs" />
     <Compile Include="StrategyDesignPattern_PDF\Implements-concretStrategy\clsWriteWithdrawPdf.cs" />
     <Compile Include="StrategyDesignPattern_PDF\Context\clsReceiptDepositPdf.cs" />
     <Compile Include="StrategyDesignPattern_PDF\Strategy\IntWritePdf.cs" />

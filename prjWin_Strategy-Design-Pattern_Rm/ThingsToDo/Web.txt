@@ -1,3 +1,6 @@
+
+
+
 …or create a new repository on the command line
 echo "# prjWin_NationalBank_Rm" >> README.md
 git init
@@ -10,3 +13,11 @@ git remote add origin https://github.com/RicardoAMendoza/prjWin_NationalBank_Rm.
 git push -u origin master
 …or import code from another repository
 You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
+
+The Strategy Pattern
+https://www.youtube.com/watch?v=94t2ayF1l3o&t=316s
+
+How to write a PDF
+https://www.youtube.com/watch?v=e1uMdAG8L3Y&t=40s
+https://sourceforge.net/projects/itextsharp/
+
