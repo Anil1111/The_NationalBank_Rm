@@ -23,6 +23,15 @@ abstraction, encapsulation, inheritance, and polymorphism.
 
 ![Class Diagram](/img/classes.jpg "Class Diagram")
 
+We did the analysis and we get the next diagram. 
+
+![Class Diagram Developed](/img/Class_Diagram_StrategyPattern.jpg "Class Diagram Developed")
+
+We implemented with C# and Visual Studio the abstract classes account and person and all their offspring.
+
+
+
+
 Dans la racine de ce projet se trouve un fichier config.js contenant les paremètres globaux de notre application, comme les paramètres de notre connexion à la base de données, le port de notre application, les messages d'erreurs du back-end, etc.
 
 ### Prérequis
