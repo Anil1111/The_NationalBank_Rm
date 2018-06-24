@@ -7,9 +7,21 @@
 
 The objective : To understand the class relationships and the concepts of object oriented programming
 
-## Pour commencer
+## Getting started
 
-![Texto alternativo](/img/classes.jpg "Título alternativo")
+A bank has several agencies spread over the Quebec territory. A bank is characterized by the name of its director, 
+its global capital, its own name and the address of its head office.
+
+### Summary of classes:
+
+We have these classes and their propierties.
+
+![Summary of classes](/img/organization.jpg "Summary of classes")
+
+We must complete the following class diagram using the required symbols to specify 
+abstraction, encapsulation, inheritance, and polymorphism.
+
+![Class Diagram](/img/classes.jpg "Class Diagram")
 
 Dans la racine de ce projet se trouve un fichier config.js contenant les paremètres globaux de notre application, comme les paramètres de notre connexion à la base de données, le port de notre application, les messages d'erreurs du back-end, etc.
 
