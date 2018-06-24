@@ -30,6 +30,12 @@ We did the analysis and we get the next diagram.
 
 We implemented with C# and Visual Studio the abstract classes account and person and all their offspring.
 
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> 5ba2ca9f9fd86dffd6ce24fdf1858b8c7acb0ba2
 Dans la racine de ce projet se trouve un fichier config.js contenant les paremètres globaux de notre application, comme les paramètres de notre connexion à la base de données, le port de notre application, les messages d'erreurs du back-end, etc.
 
 ### Prérequis
