@@ -241,5 +241,17 @@ namespace prjWin_NationalBank_Rm
             {
             }
         }
+
+        public clsListDirecteurs clsListDirecteurs1
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+
+            set
+            {
+            }
+        }
     }
 }

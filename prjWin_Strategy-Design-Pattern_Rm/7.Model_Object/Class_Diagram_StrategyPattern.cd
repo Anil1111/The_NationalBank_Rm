@@ -1,7 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="prjWin_NationalBank_Rm.clsAdmin">
-    <Position X="3.5" Y="13" Width="1.5" />
+    <Position X="4" Y="13" Width="1.5" />
+    <InheritanceLine Type="prjWin_NationalBank_Rm.clsHuman" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="10.25" Y="17.75" />
+        <Point X="10.25" Y="17.312" />
+        <Point X="5.375" Y="17.312" />
+        <Point X="5.375" Y="17.312" />
+        <Point X="5.5" Y="17.312" />
+      </Path>
+    </InheritanceLine>
     <TypeIdentifier>
       <HashCode>AAAAAAJggCSAAgAAAAAAAAECAAACBAACAAAhAAAACAI=</HashCode>
       <FileName>1.Model\clsAdmin.cs</FileName>
@@ -9,22 +18,55 @@
   </Class>
   <Class Name="prjWin_NationalBank_Rm.clsAgency">
     <Position X="14.25" Y="3.75" Width="1.5" />
+    <AssociationLine Name="clsListClients1" Type="prjWin_NationalBank_Rm.clsListClients" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="14.25" Y="8.25" />
+        <Point X="12.5" Y="8.25" />
+        <Point X="12.5" Y="9" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.102" Y="0.845" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="clsListEmployees1" Type="prjWin_NationalBank_Rm.clsListEmployees" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="14.25" Y="7.625" />
+        <Point X="10.531" Y="7.625" />
+        <Point X="10.531" Y="9" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-2.039" Y="1.493" />
+      </MemberNameLabel>
+    </AssociationLine>
     <TypeIdentifier>
-      <HashCode>AAAAAgAAwAACAEgAABAAAAgAAAgAAABAAEFAAIMAAAY=</HashCode>
+      <HashCode>AAAAAgAAwAACAEgAABAAAAgAAAgAAABAAEFAAIMAIAY=</HashCode>
       <FileName>1.Model\clsAgency.cs</FileName>
     </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="clsListClients1" />
+      <Property Name="clsListEmployees1" />
+    </ShowAsAssociation>
   </Class>
   <Class Name="prjWin_NationalBank_Rm.clsClient">
     <Position X="11.75" Y="13" Width="1.5" />
+    <InheritanceLine Type="prjWin_NationalBank_Rm.clsHuman" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="10.25" Y="17.75" />
+        <Point X="10.25" Y="17.312" />
+        <Point X="11.417" Y="17.312" Type="JumpStart" />
+        <Point X="11.583" Y="17.312" Type="JumpEnd" />
+        <Point X="11.75" Y="17.312" />
+      </Path>
+    </InheritanceLine>
     <AssociationLine Name="clsListUnpaidAccounts1" Type="prjWin_NationalBank_Rm.clsListUnpaidAccounts" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
       <Path>
         <Point X="12.875" Y="18.021" />
-        <Point X="12.875" Y="19.375" />
-        <Point X="15.75" Y="19.375" />
-        <Point X="15.75" Y="19.75" />
+        <Point X="12.875" Y="19.171" />
+        <Point X="15.75" Y="19.171" />
+        <Point X="15.75" Y="19.5" />
       </Path>
       <MemberNameLabel ManuallyPlaced="true">
-        <Position X="0.982" Y="0.577" />
+        <Position X="0.97" Y="0.457" />
       </MemberNameLabel>
     </AssociationLine>
     <AssociationLine Name="clsListPaidAccounts1" Type="prjWin_NationalBank_Rm.clsListPaidAccounts">
@@ -42,7 +84,7 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="prjWin_NationalBank_Rm.clsDate">
-    <Position X="11.25" Y="22.5" Width="1.5" />
+    <Position X="10.75" Y="22" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AACAAAAAJgAAAAAAAAAAAAAAAAAAAAAEAAAAEwAAAgA=</HashCode>
       <FileName>1.Model\clsDate.cs</FileName>
@@ -50,6 +92,14 @@
   </Class>
   <Class Name="prjWin_NationalBank_Rm.clsDirecteur">
     <Position X="7.25" Y="13" Width="1.5" />
+    <InheritanceLine Type="prjWin_NationalBank_Rm.clsHuman" ManuallyRouted="true">
+      <Path>
+        <Point X="10.25" Y="17.75" />
+        <Point X="10.25" Y="17.302" />
+        <Point X="8" Y="17.302" />
+        <Point X="8" Y="16.482" />
+      </Path>
+    </InheritanceLine>
     <TypeIdentifier>
       <HashCode>AAAAAiIBgAQAAAAAAAAAEAQAAAAAAAAAAACAAAAAAAA=</HashCode>
       <FileName>1.Model\clsDirecteur.cs</FileName>
@@ -57,9 +107,14 @@
   </Class>
   <Class Name="prjWin_NationalBank_Rm.clsEmployee">
     <Position X="9.5" Y="13" Width="1.5" />
-    <AssociationLine Name="clsDate1" Type="prjWin_NationalBank_Rm.clsDate">
+    <AssociationLine Name="clsDate1" Type="prjWin_NationalBank_Rm.clsDate" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="11" Y="14.837" />
+        <Point X="11.5" Y="14.837" />
+        <Point X="11.5" Y="22" />
+      </Path>
       <MemberNameLabel ManuallyPlaced="true">
-        <Position X="-0.968" Y="2.037" />
+        <Position X="-0.92" Y="0.743" />
       </MemberNameLabel>
     </AssociationLine>
     <TypeIdentifier>
@@ -80,11 +135,21 @@
     <AssociationLine Name="clsListAdmins1" Type="prjWin_NationalBank_Rm.clsListAdmins" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
       <Path>
         <Point X="5.5" Y="5.438" />
-        <Point X="4.25" Y="5.438" />
-        <Point X="4.25" Y="9" />
+        <Point X="4.75" Y="5.438" />
+        <Point X="4.75" Y="9" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="-0.605" Y="3.78" Height="0.182" Width="1.191" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="clsListDirecteurs1" Type="prjWin_NationalBank_Rm.clsListDirecteurs" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="6.312" Y="8.603" />
+        <Point X="6.312" Y="10.5" />
+        <Point X="7.25" Y="10.5" />
       </Path>
       <MemberNameLabel ManuallyPlaced="true">
-        <Position X="-0.922" Y="3.752" />
+        <Position X="0.082" Y="-0.491" />
       </MemberNameLabel>
     </AssociationLine>
     <TypeIdentifier>
@@ -94,45 +159,46 @@
     <ShowAsAssociation>
       <Property Name="clsListAgencies1" />
       <Property Name="clsListAdmins1" />
+      <Property Name="clsListDirecteurs1" />
     </ShowAsAssociation>
   </Class>
   <Class Name="prjWin_NationalBank_Rm.clsPaidAccount">
-    <Position X="18" Y="15.75" Width="1.5" />
+    <Position X="18" Y="16.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAABAAAAgAAAAAAAAAMAAAAAAAAABAAFAAAAA=</HashCode>
       <FileName>1.Model\clsPaidAccount.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="prjWin_NationalBank_Rm.clsUnpaidAccount">
-    <Position X="18" Y="19.75" Width="1.5" />
+    <Position X="18" Y="19.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAgBAAAAgAAAAAAAAAEAAAAAAAAABAAFAAAAA=</HashCode>
       <FileName>1.Model\clsUnpaidAccount.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="prjWin_NationalBank_Rm.frmBank" Collapsed="true">
-    <Position X="26.75" Y="3.5" Width="2.75" />
+    <Position X="24.25" Y="3.75" Width="2.75" />
     <TypeIdentifier>
-      <HashCode>//2736v7db7339/776fnKPn37+7z+99d//je/38/d/0=</HashCode>
+      <HashCode>//2736v7d7/3/9/7/7f37fv/7//3+/9d//ze//9/d/8=</HashCode>
       <FileName>2.View\frmBank.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="prjWin_NationalBank_Rm.clsDataSave">
-    <Position X="17.75" Y="10.75" Width="2.5" />
+    <Position X="16.75" Y="10.25" Width="2.5" />
     <TypeIdentifier>
       <HashCode>AEAABgAAAgACgAAACQCACABEAAACAAAAAIAAAAAAABA=</HashCode>
       <FileName>3.Control\clsDataSave.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="prjWin_NationalBank_Rm.clsDataSource">
-    <Position X="14.5" Y="10.75" Width="2.5" />
+    <Position X="14" Y="10.25" Width="2.5" />
     <TypeIdentifier>
       <HashCode>AAgBAkAAAhAAAAAAQACAAAFAAAAAACAAACAAAAAAIAA=</HashCode>
       <FileName>3.Control\clsDataSource.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="prjWin_NationalBank_Rm.clsListAdmins">
-    <Position X="3.5" Y="9" Width="1.5" />
+    <Position X="4" Y="9" Width="1.5" />
     <AssociationLine Name="clsAdmin1" Type="prjWin_NationalBank_Rm.clsAdmin">
       <MemberNameLabel ManuallyPlaced="true">
         <Position X="0.11" Y="0.144" />
@@ -222,7 +288,7 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="prjWin_NationalBank_Rm.clsListUnpaidAccounts">
-    <Position X="15" Y="19.75" Width="1.5" />
+    <Position X="15" Y="19.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAEAAAAIAABABAAAgAYAAAAIAAAAAAAAAAAgQAAAAA=</HashCode>
       <FileName>4.Collections\clsListUnpaidAccounts.cs</FileName>
@@ -232,15 +298,15 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="prjWin_NationalBank_Rm.clsAccount">
-    <Position X="21.25" Y="15.75" Width="1.5" />
-    <AssociationLine Name="clsDate1" Type="prjWin_NationalBank_Rm.clsDate" FixedFromPoint="true" FixedToPoint="true">
+    <Position X="20.5" Y="15.75" Width="1.5" />
+    <AssociationLine Name="clsDate1" Type="prjWin_NationalBank_Rm.clsDate" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
       <Path>
-        <Point X="22.062" Y="22.949" />
-        <Point X="22.062" Y="24.188" />
-        <Point X="12.75" Y="24.188" />
+        <Point X="21.312" Y="22.949" />
+        <Point X="21.312" Y="24.375" />
+        <Point X="12.25" Y="24.375" />
       </Path>
       <MemberNameLabel ManuallyPlaced="true">
-        <Position X="2.638" Y="0.12" />
+        <Position X="4.231" Y="0.012" />
       </MemberNameLabel>
     </AssociationLine>
     <TypeIdentifier>
@@ -252,40 +318,40 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="prjWin_NationalBank_Rm.clsHuman">
-    <Position X="9.5" Y="19.25" Width="1.5" />
+    <Position X="9.5" Y="17.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAgIAAAQAACIAAEAAABQAAAIAAAAAAAAAgAAAAAg=</HashCode>
       <FileName>5.Abstract_Class\clsHuman.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="prjWin_NationalBank_Rm.clsAdminEventAgrs">
-    <Position X="0.75" Y="13" Width="1.5" />
+    <Position X="2" Y="13.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
       <FileName>6.Event_Delegates\clsAdminEventAgrs.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="prjWin_NationalBank_Rm.Program">
-    <Position X="0.5" Y="4.75" Width="1.5" />
+    <Position X="2.25" Y="5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="prjWin_NationalBank_Rm.Properties.Resources" Collapsed="true">
-    <Position X="0.5" Y="3.75" Width="1.5" />
+    <Position X="2.25" Y="4" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
     </TypeIdentifier>
   </Class>
   <Class Name="prjWin_NationalBank_Rm.Properties.Settings" Collapsed="true">
-    <Position X="0.5" Y="2.75" Width="1.5" />
+    <Position X="2.25" Y="3" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
     </TypeIdentifier>
   </Class>
   <Class Name="prjWin_NationalBank_Rm.clsWriteDepositPdf">
-    <Position X="22" Y="5.5" Width="2" />
+    <Position X="21.5" Y="5.5" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>StrategyDesignPattern_PDF\Implements-concretStrategy\clsWriteDepositPdf.cs</FileName>
@@ -296,7 +362,7 @@
     <Position X="18.5" Y="3.75" Width="2" />
     <TypeIdentifier>
       <HashCode>AAgAAEAAAAAAAAAAAAAAAAAAAAAAAAQAABAAAAAAAAA=</HashCode>
-      <FileName>StrategyDesignPattern_PDF\Implements-concretStrategy\clsWriteDocumentPdf.cs</FileName>
+      <FileName>StrategyDesignPattern_PDF\Context\clsWriteDocumentPdf.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="prjWin_NationalBank_Rm.clsReceiptDepositPdf">
@@ -315,7 +381,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="prjWin_NationalBank_Rm.clsWriteWithdrawPdf">
-    <Position X="23.25" Y="7.25" Width="2" />
+    <Position X="22.75" Y="7.25" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>StrategyDesignPattern_PDF\Implements-concretStrategy\clsWriteWithdrawPdf.cs</FileName>
@@ -323,7 +389,7 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="prjWin_NationalBank_Rm.clsWriteConsultPdf">
-    <Position X="24.5" Y="9" Width="2" />
+    <Position X="24" Y="9" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>StrategyDesignPattern_PDF\Implements-concretStrategy\clsWriteConsultPdf.cs</FileName>
@@ -353,7 +419,7 @@
     </TypeIdentifier>
   </Class>
   <Interface Name="prjWin_NationalBank_Rm.IntWritePdf">
-    <Position X="22" Y="3.75" Width="2" />
+    <Position X="21.5" Y="3.75" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>StrategyDesignPattern_PDF\Strategy\IntWritePdf.cs</FileName>

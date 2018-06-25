@@ -143,6 +143,30 @@ namespace prjWin_NationalBank_Rm
             }
         }
 
+        public clsListClients clsListClients1
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+
+            set
+            {
+            }
+        }
+
+        public clsListEmployees clsListEmployees1
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+
+            set
+            {
+            }
+        }
+
         /// <summary>
         /// fncOpenAgence() -> Open a new agence.
         /// </summary>

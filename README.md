@@ -28,7 +28,17 @@ We must complete the following class diagram using the required symbols to speci
 
 ![Class Diagram](/img/classes.jpg "Class Diagram")
 
-We did the analysis and we get the next diagram. 
+We did the analysis and we get the next diagrams.
+
+### abstract class clsAccount:
+
+![Class Diagram Account](/img/account.jpg "abstract class clsAccount")
+
+### abstract class clsHuman:
+
+![Class Diagram Human](/img/human.jpg "abstract class clsHuman")
+
+### Class Diagram Developed:
 
 ![Class Diagram Developed](/img/Class_Diagram_StrategyPattern.jpg "Class Diagram Developed")
 
@@ -64,6 +74,15 @@ Not all membersfrom the parent class are nherited in the the child class.
  * Static constructors, *which initialize the static data of a class*.
  * Instance constructors, *which you call to create a new instance of the class. Each class must define its own constructors*.
  * Finalizers, *which are called by the runtime's garbage collector to destroy instances of a class*.
+ 
+ 
+*All members from the super class are inherited to the lower classes, but if they are visible or not depends on their accessibility.*
+
+Private *members are visible only in derived classes that are nested in their base class.*
+Protected *members are visible only in derived classes.*
+Internal *members are visible only in derived classes that are located in the same assembly as the base class.*
+Public *members are visible in derived classes and are part of the derived class' public interface.*
+ 
 
 
 
