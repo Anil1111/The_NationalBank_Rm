@@ -111,6 +111,14 @@ The member in the parent class have to be marked with the *virtual* keyword.
             MessageBox.Show("an interest of : " + " " + vInterestPayment.ToString() + " $ " + " has been paid ");
             return base.fncDeposit(deposit);
         }
+		
+#### Abstract is -		
+In a class declaration indicates that this class is going to be a super class, means that is going to be a base class of others classes.
+Members with the key word abstract, or included in an abstract class, must be implemented in the lower classes.
+Abstract can be used with classes, methods, properties, indexers, and events.
+
+[Key word abstract](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/abstract)
+		
 
 
 
