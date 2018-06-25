@@ -23,6 +23,8 @@ We have these classes and their propierties.
 We must complete the following class diagram using the required symbols to specify 
  *abstraction, encapsulation, inheritance, and polymorphism.*
 
+### Summary of classes:
+
 
 ![Class Diagram](/img/classes.jpg "Class Diagram")
 
@@ -31,6 +33,26 @@ We did the analysis and we get the next diagram.
 ![Class Diagram Developed](/img/Class_Diagram_StrategyPattern.jpg "Class Diagram Developed")
 
 We implemented with C# and Visual Studio the abstract classes account (clsAccount) and human (clsHuman) and all their offspring.
+
+### concepts.
+
+#### Encapsulation is -
+
+ * Hiding Complexity,
+ * Binding Data and Function together,
+ * Making Complicated Method's Private,
+ * Making Instance Variable's Private,
+ * Hiding Unnecessary Data and Functions from End User.
+ 
+Encapsulation implements Abstraction.
+
+ #### Abstraction is -
+ 
+ * Showing Whats Necessary,
+ * Data needs to abstract from End User,
+ 
+ [What is the difference between Abstraction and Encapsulation ?](https://www.youtube.com/watch?v=1Q4I63-hKcY)
+ 
 
 
 Dans la racine de ce projet se trouve un fichier config.js contenant les paremètres globaux de notre application, comme les paramètres de notre connexion à la base de données, le port de notre application, les messages d'erreurs du back-end, etc.
