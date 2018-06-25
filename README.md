@@ -34,7 +34,7 @@ We did the analysis and we get the next diagram.
 
 We implemented with C# and Visual Studio the abstract classes account (clsAccount) and human (clsHuman) and all their offspring.
 
-### concepts.
+### Concepts.
 
 #### Encapsulation is -
 
@@ -51,8 +51,28 @@ Encapsulation implements Abstraction.
  * Showing Whats Necessary,
  * Data needs to abstract from End User,
  
- [What is the difference between Abstraction and Encapsulation ?](https://www.youtube.com/watch?v=1Q4I63-hKcY)
+[What is the difference between Abstraction and Encapsulation ?](https://www.youtube.com/watch?v=1Q4I63-hKcY)
  
+#### Inheritance is -
+
+When we can reuse (inherits), the behavior of a super class (parent class) in a child class (class that inherits the members of the base class).
+
+[Inheritance in C# and .NET](https://docs.microsoft.com/en-us/dotnet/csharp/tutorials/inheritance)
+
+Not all membersfrom the parent class are nherited in the the child class.
+
+ * Static constructors, *which initialize the static data of a class*.
+ * Instance constructors, *which you call to create a new instance of the class. Each class must define its own constructors*.
+ * Finalizers, *which are called by the runtime's garbage collector to destroy instances of a class*.
+
+
+
+
+
+
+
+
+
 
 
 Dans la racine de ce projet se trouve un fichier config.js contenant les paremètres globaux de notre application, comme les paramètres de notre connexion à la base de données, le port de notre application, les messages d'erreurs du back-end, etc.
