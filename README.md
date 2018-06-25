@@ -120,18 +120,23 @@ Abstract can be used with classes, methods, properties, indexers, and events.
 [Key word abstract](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/abstract)
 
 
-#### MVC 	
+#### MVC : Model View Control.	
 
  * Model:      *It should be responsible for the data of the application domain.*
  * View:       *It presents the display of the model in the user interface.*
  * Controller: *It is really the heart of the MVC, the intermediary that ties the Model and the View together.*
                *The controller takes user input, manipulates the model & causes the view to update*
 			   
-![Controller](/img/controller.jpg "Controller is the heart of the MVC")
-			   
+
+In the projec we can watch the MVC in the folder projet as follows.  
+ 
 ![Model-View-Controller](/img/mvc.jpg "Model-View-Controller")
 
+But the heart of the MVC, the controllers are the public static class clsDataSource, that takes the data
+from the txt files, delivers the data as the inputs to the application and the results goes to the public static class clsDataSave
+and this class save the outputs in the xml files.
 
+![Controller](/img/controller.jpg "Controller is the heart of the MVC")
 
 #### Events and delegates
 
