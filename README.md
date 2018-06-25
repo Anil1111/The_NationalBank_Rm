@@ -7,6 +7,8 @@
 
 The objective : To understand the class relationships and the concepts of object oriented programming
 
+[Diagramme de classes UML](https://lipn.univ-paris13.fr/~gerard/docs/corrections/uml-corr02.pdf)
+
 ## Getting started
 
 A bank has several agencies spread over the Quebec territory. A bank is characterized by the name of its director, 
@@ -28,14 +30,9 @@ We did the analysis and we get the next diagram.
 
 ![Class Diagram Developed](/img/Class_Diagram_StrategyPattern.jpg "Class Diagram Developed")
 
-We implemented with C# and Visual Studio the abstract classes account and person and all their offspring.
-
-<<<<<<< HEAD
-=======
+We implemented with C# and Visual Studio the abstract classes account (clsAccount) and human (clsHuman) and all their offspring.
 
 
-
->>>>>>> 5ba2ca9f9fd86dffd6ce24fdf1858b8c7acb0ba2
 Dans la racine de ce projet se trouve un fichier config.js contenant les paremètres globaux de notre application, comme les paramètres de notre connexion à la base de données, le port de notre application, les messages d'erreurs du back-end, etc.
 
 ### Prérequis
