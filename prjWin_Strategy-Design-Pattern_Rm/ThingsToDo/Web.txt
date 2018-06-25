@@ -14,6 +14,9 @@ git push -u origin master
 …or import code from another repository
 You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
 
+C# Events and Delegates Made Simple
+https://www.youtube.com/watch?v=jQgwEsJISy0
+
 The Strategy Pattern
 https://www.youtube.com/watch?v=94t2ayF1l3o&t=316s
 

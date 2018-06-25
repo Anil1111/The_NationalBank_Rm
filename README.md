@@ -113,21 +113,74 @@ The member in the parent class have to be marked with the *virtual* keyword.
         }
 		
 #### Abstract is -		
-In a class declaration indicates that this class is going to be a super class, means that is going to be a base class of others classes.
+In a class declaration indicates that this class is going to be a super class, a base class of others classes.
 Members with the key word abstract, or included in an abstract class, must be implemented in the lower classes.
 Abstract can be used with classes, methods, properties, indexers, and events.
 
 [Key word abstract](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/abstract)
+
+
+#### MVC 	
+
+ * Model:      *It should be responsible for the data of the application domain.*
+ * View:       *It presents the display of the model in the user interface.*
+ * Controller: *It is really the heart of the MVC, the intermediary that ties the Model and the View together.*
+               *The controller takes user input, manipulates the model & causes the view to update*
+			   
+![Controller](/img/controller.jpg "Controller is the heart of the MVC")
+			   
+![Model-View-Controller](/img/mvc.jpg "Model-View-Controller")
+
+
+
+#### Events and delegates
+
+An event is a message sent by an object to signal the occurrence of an action.
+
+ * Events. *Tool that helps communication betwen classes and helps to extend applications.*
+
+A delegate is a class that can hold a reference to a method. 
+Unlike other classes, a delegate class has a signature, and it can hold references only to methods that match its signature.
+  
+ * Delegates. *Agreement / Contract between Publisher and Subscriber, Determines the signature of the event handler method in Subscriber.*
+  
+[C# Events and Delegates](https://www.youtube.com/watch?v=jQgwEsJISy0)  
+        
+		DECLARE AN EVENT
+        1. define delegate
+           public delegate void AdminDelegate(object source, clsAdminEventAgrs e);
+        2. define un event based on the delegate
+           public event AdminDelegate ApplicationClosed;
+
+        public event EventHandler<clsAdminEventAgrs> ApplicationClosed;
+        public event EventHandler<clsAdminEventAgrs> ApplicationWarned;
 		
+		3. Raise the event
+
+        public void OnApplicationClosed()
+        {
+            if (ApplicationClosed != null)
+            {
+                ApplicationClosed(this, new clsAdminEventAgrs("An event started : you just have 5 minuts in admin control !!"));
+            }
+        }
+        public void OnApplicationWarned()
+        {
+            if (ApplicationWarned != null)
+            {
+                ApplicationWarned(this, new clsAdminEventAgrs("The application will be closed in 2 minuts !!"));
+            }
+        }
 
 
+#### Strategy design pattern
 
+Identify families of algorithms as a group technology, gather them and make them interchangeable.
 
+[C# The Strategy Pattern](https://www.youtube.com/watch?v=94t2ayF1l3o&t=316s)
 
-
-
-
-
+![Strategy design pattern](/img/sdp.jpg "Strategy design pattern")
+		
 
 ### Prerequisites
 

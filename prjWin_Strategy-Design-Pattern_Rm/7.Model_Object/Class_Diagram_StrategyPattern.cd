@@ -1,5 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="CONTEXT">
+    <Position X="18.544" Y="3.734" Height="0.344" Width="1.992" />
+  </Comment>
+  <Comment CommentText="STRATEGY">
+    <Position X="21.232" Y="3.786" Height="0.312" Width="1.971" />
+  </Comment>
+  <Comment CommentText="IMPLEMENTATION">
+    <Position X="21.305" Y="5.776" Height="0.365" Width="1.887" />
+  </Comment>
+  <Comment CommentText="STRATEGY DESIGN PATTERN">
+    <Position X="16.273" Y="3.724" Height="0.323" Width="1.96" />
+  </Comment>
+  <Comment CommentText="EVENTS DELEGATES">
+    <Position X="2.031" Y="12.474" Height="0.344" Width="1.971" />
+  </Comment>
+  <Comment CommentText="HERITAGE">
+    <Position X="6.729" Y="17.734" Height="0.344" Width="1.96" />
+  </Comment>
+  <Comment CommentText="HERITAGE">
+    <Position X="18.042" Y="18.964" Height="0.344" Width="1.96" />
+  </Comment>
   <Class Name="prjWin_NationalBank_Rm.clsAdmin">
     <Position X="4" Y="13" Width="1.5" />
     <InheritanceLine Type="prjWin_NationalBank_Rm.clsHuman" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
@@ -201,7 +222,7 @@
     <Position X="4" Y="9" Width="1.5" />
     <AssociationLine Name="clsAdmin1" Type="prjWin_NationalBank_Rm.clsAdmin">
       <MemberNameLabel ManuallyPlaced="true">
-        <Position X="0.11" Y="0.144" />
+        <Position X="-0.973" Y="0.279" />
       </MemberNameLabel>
     </AssociationLine>
     <TypeIdentifier>
@@ -325,7 +346,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="prjWin_NationalBank_Rm.clsAdminEventAgrs">
-    <Position X="2" Y="13.25" Width="1.5" />
+    <Position X="2" Y="13" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
       <FileName>6.Event_Delegates\clsAdminEventAgrs.cs</FileName>
@@ -351,7 +372,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="prjWin_NationalBank_Rm.clsWriteDepositPdf">
-    <Position X="21.5" Y="5.5" Width="2" />
+    <Position X="21.25" Y="6.5" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>StrategyDesignPattern_PDF\Implements-concretStrategy\clsWriteDepositPdf.cs</FileName>
@@ -359,20 +380,20 @@
     <Lollipop Position="0.1" />
   </Class>
   <Class Name="prjWin_NationalBank_Rm.clsWriteDocumentPdf">
-    <Position X="18.5" Y="3.75" Width="2" />
+    <Position X="18.5" Y="4.25" Width="2" />
     <TypeIdentifier>
       <HashCode>AAgAAEAAAAAAAAAAAAAAAAAAAAAAAAQAABAAAAAAAAA=</HashCode>
       <FileName>StrategyDesignPattern_PDF\Context\clsWriteDocumentPdf.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="prjWin_NationalBank_Rm.clsReceiptDepositPdf">
-    <Position X="16.25" Y="6.5" Width="2" />
-    <InheritanceLine Type="prjWin_NationalBank_Rm.clsWriteDocumentPdf" FixedFromPoint="true">
+    <Position X="16.25" Y="7" Width="2" />
+    <InheritanceLine Type="prjWin_NationalBank_Rm.clsWriteDocumentPdf" ManuallyRouted="true" FixedFromPoint="true">
       <Path>
-        <Point X="19.5" Y="5.882" />
-        <Point X="19.5" Y="6.125" />
-        <Point X="17.25" Y="6.125" />
-        <Point X="17.25" Y="6.5" />
+        <Point X="19.5" Y="6.382" />
+        <Point X="19.5" Y="6.755" />
+        <Point X="17.25" Y="6.755" />
+        <Point X="17.25" Y="7" />
       </Path>
     </InheritanceLine>
     <TypeIdentifier>
@@ -381,7 +402,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="prjWin_NationalBank_Rm.clsWriteWithdrawPdf">
-    <Position X="22.75" Y="7.25" Width="2" />
+    <Position X="22.5" Y="8" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>StrategyDesignPattern_PDF\Implements-concretStrategy\clsWriteWithdrawPdf.cs</FileName>
@@ -389,7 +410,7 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="prjWin_NationalBank_Rm.clsWriteConsultPdf">
-    <Position X="24" Y="9" Width="2" />
+    <Position X="23.75" Y="9.5" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>StrategyDesignPattern_PDF\Implements-concretStrategy\clsWriteConsultPdf.cs</FileName>
@@ -397,20 +418,20 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="prjWin_NationalBank_Rm.clsReceiptWithdrawPdf">
-    <Position X="18.5" Y="8" Width="2" />
+    <Position X="18.5" Y="8.5" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAA=</HashCode>
       <FileName>StrategyDesignPattern_PDF\Context\clsReceiptWithdrawPdf.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="prjWin_NationalBank_Rm.clsReceiptConsultPdf">
-    <Position X="20.75" Y="9.5" Width="2" />
+    <Position X="20.75" Y="10" Width="2" />
     <InheritanceLine Type="prjWin_NationalBank_Rm.clsWriteDocumentPdf" ManuallyRouted="true">
       <Path>
-        <Point X="19.5" Y="5.882" />
-        <Point X="19.5" Y="7.298" />
-        <Point X="21.75" Y="7.298" />
-        <Point X="21.75" Y="9.5" />
+        <Point X="19.5" Y="6.382" />
+        <Point X="19.5" Y="7.97" />
+        <Point X="21.75" Y="7.97" />
+        <Point X="21.75" Y="10" />
       </Path>
     </InheritanceLine>
     <TypeIdentifier>
@@ -419,7 +440,7 @@
     </TypeIdentifier>
   </Class>
   <Interface Name="prjWin_NationalBank_Rm.IntWritePdf">
-    <Position X="21.5" Y="3.75" Width="2" />
+    <Position X="21.25" Y="4.25" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>StrategyDesignPattern_PDF\Strategy\IntWritePdf.cs</FileName>
