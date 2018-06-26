@@ -124,8 +124,6 @@ Abstract can be used with classes, methods, properties, indexers, and events.
 
 [Model View Controller](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller)
 
-
-
  * Model:      *It should be responsible for the data of the application domain.*
  * View:       *It presents the display of the model in the user interface.*
  * Controller: *It is really the heart of the MVC, the intermediary that ties the Model and the View together.*
