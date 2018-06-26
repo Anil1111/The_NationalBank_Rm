@@ -120,23 +120,34 @@ Abstract can be used with classes, methods, properties, indexers, and events.
 [Key word abstract](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/abstract)
 
 
-#### MVC : Model View Control.	
+#### MVC : Model View Controller.
+
+[Model View Controller](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller)
+
+
 
  * Model:      *It should be responsible for the data of the application domain.*
  * View:       *It presents the display of the model in the user interface.*
  * Controller: *It is really the heart of the MVC, the intermediary that ties the Model and the View together.*
                *The controller takes user input, manipulates the model & causes the view to update*
-			   
 
+When we have this pattern in one application (MVC pattern), we can reuse code in other application
+and work in parallel whit others developers.			   
+			   
+			   
 In the projec we can watch the MVC in the folder projet as follows.  
+ 
  
 ![Model-View-Controller](/img/mvc.jpg "Model-View-Controller")
 
-But the heart of the MVC, the controllers are the public static class clsDataSource, that takes the data
-from the txt files, delivers the data as the inputs to the application and the results goes to the public static class clsDataSave
-and this class save the outputs in the xml files.
+
+But the heart of the MVC, the controllers are clsDataSource and clsDataSave. The clsDataSource takes the data
+from the TXT files, delivers the data as the inputs to the application and the result goes to clsDataSave
+and this class save the outputs in XML files.
+
 
 ![Controller](/img/controller.jpg "Controller is the heart of the MVC")
+
 
 #### Events and delegates
 
@@ -150,6 +161,7 @@ Unlike other classes, a delegate class has a signature, and it can hold referenc
  * Delegates. *Agreement / Contract between Publisher and Subscriber, Determines the signature of the event handler method in Subscriber.*
   
 [C# Events and Delegates](https://www.youtube.com/watch?v=jQgwEsJISy0)  
+
         
 		DECLARE AN EVENT
         1. define delegate
