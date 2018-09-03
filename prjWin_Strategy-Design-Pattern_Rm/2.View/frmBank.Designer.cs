@@ -640,6 +640,7 @@
             this.radTransactionsConsult.TabStop = true;
             this.radTransactionsConsult.Text = "Consult";
             this.radTransactionsConsult.UseVisualStyleBackColor = true;
+            this.radTransactionsConsult.CheckedChanged += new System.EventHandler(this.radTransactionsConsult_CheckedChanged);
             // 
             // radTransactionsWithdraw
             // 

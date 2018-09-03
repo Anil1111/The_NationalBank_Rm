@@ -390,6 +390,7 @@ namespace prjWin_NationalBank_Rm
                 /// </summary>
                 if (radTransactionsDeposit.Checked && actualUnpaidAccount.vType == lblTransactionsDisplayAccountType.Text)
                 {
+                    btnTransactionsTransaction.BackColor = Color.Blue;
                     double deposit = Convert.ToDouble(txtTransactionsDeposit.Text.Trim());
                     if (actualUnpaidAccount.fncDeposit(deposit) == false)
                     {
@@ -616,6 +617,8 @@ namespace prjWin_NationalBank_Rm
         // radio controls in the transaction : deposit
         private void radTransactionsDeposit_CheckedChanged(object sender, EventArgs e)
         {
+            btnTransactionsTransaction.BackColor = Color.Aquamarine;
+            btnTransactionsTransaction.Text = "Deposit";
             txtTransactionsDeposit.Visible = radTransactionsDeposit.Checked;
             txtTransactionsDeposit.Focus();
         }
@@ -623,8 +626,17 @@ namespace prjWin_NationalBank_Rm
         // radio controls in the transaction : withdraw
         private void radTransactionsWithdraw_CheckedChanged(object sender, EventArgs e)
         {
+            btnTransactionsTransaction.BackColor = Color.SteelBlue;
+            btnTransactionsTransaction.Text = "Withdraw";
             txtTransactionsWithdraw.Visible = radTransactionsWithdraw.Checked;
             txtTransactionsWithdraw.Focus();
+        }
+
+        // radio controls in the transaction : consult
+        private void radTransactionsConsult_CheckedChanged(object sender, EventArgs e)
+        {
+            btnTransactionsTransaction.BackColor = Color.CadetBlue;
+            btnTransactionsTransaction.Text = "Consult";
         }
 
         private void btnBackTransactionsAccounts_Click(object sender, EventArgs e)

@@ -209,7 +209,6 @@ Identify families of algorithms as a group technology, gather them and make them
 This project uses GitHub.com as source manager in the following repository:
 https://github.com/RicardoAMendoza/The_NationalBank_Rm
 
-Historique de versions : https://gitlab.com/AndyDelRisco/ConservatoireEMRTM/commits/master
 
 ## Auteur
 
