@@ -82,14 +82,14 @@
     <Compile Include="4.Collections\clsListPaidAccounts.cs" />
     <Compile Include="4.Collections\clsListUnpaidAccounts.cs" />
     <Compile Include="6.Event_Delegates\clsAdminEventAgrs.cs" />
-    <Compile Include="StrategyDesignPattern_PDF\Context\clsReceiptConsultPdf.cs" />
-    <Compile Include="StrategyDesignPattern_PDF\Context\clsReceiptWithdrawPdf.cs" />
-    <Compile Include="StrategyDesignPattern_PDF\Implements-concretStrategy\clsWriteConsultPdf.cs" />
-    <Compile Include="StrategyDesignPattern_PDF\Implements-concretStrategy\clsWriteDepositPdf.cs" />
-    <Compile Include="StrategyDesignPattern_PDF\Context\clsWriteDocumentPdf.cs" />
-    <Compile Include="StrategyDesignPattern_PDF\Implements-concretStrategy\clsWriteWithdrawPdf.cs" />
-    <Compile Include="StrategyDesignPattern_PDF\Context\clsReceiptDepositPdf.cs" />
-    <Compile Include="StrategyDesignPattern_PDF\Strategy\IntWritePdf.cs" />
+    <Compile Include="10.StrategyDesignPattern_PDF\Context\clsReceiptConsultPdf.cs" />
+    <Compile Include="10.StrategyDesignPattern_PDF\Context\clsReceiptWithdrawPdf.cs" />
+    <Compile Include="10.StrategyDesignPattern_PDF\Implements-concretStrategy\clsWriteConsultPdf.cs" />
+    <Compile Include="10.StrategyDesignPattern_PDF\Implements-concretStrategy\clsWriteDepositPdf.cs" />
+    <Compile Include="10.StrategyDesignPattern_PDF\Context\clsWriteDocumentPdf.cs" />
+    <Compile Include="10.StrategyDesignPattern_PDF\Implements-concretStrategy\clsWriteWithdrawPdf.cs" />
+    <Compile Include="10.StrategyDesignPattern_PDF\Context\clsReceiptDepositPdf.cs" />
+    <Compile Include="10.StrategyDesignPattern_PDF\Strategy\IntWritePdf.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="2.View\frmBank.resx">
@@ -167,7 +167,6 @@
     <Content Include="Employees\trudeau.png" />
     <Content Include="Employees\zamanego.png" />
     <Content Include="InitializeComponent\robotica.png" />
-    <Content Include="ThingsToDo\ThingsToDo.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
