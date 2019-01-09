@@ -1,18 +1,22 @@
-# The National Bank
-# ============
+# OOP winapp The National Bank
 
-## Project : prjWin_NationalBank_Rm
+## Project name : prjWin_NationalBank_Rm
+
 Été-2017
 
+## Description
 
-The objective : To understand the class relationships and the concepts of object oriented programming
+In this project we will introduce concepts of Object Oriented Programming and the relationship beetween classes.
 
-[Diagramme de classes UML](https://lipn.univ-paris13.fr/~gerard/docs/corrections/uml-corr02.pdf)
 
-## Getting started
+### This project focus in the Object Oriented Programming.
+
+
+### Problem
 
 A bank has several agencies spread over the Quebec territory. A bank is characterized by the name of its director, 
 its global capital, its own name and the address of its head office.
+
 
 ### Summary of classes:
 
@@ -23,26 +27,30 @@ We have these classes and their propierties.
 We must complete the following class diagram using the required symbols to specify 
  *abstraction, encapsulation, inheritance, and polymorphism.*
 
+ 
 ### Summary of classes:
-
 
 ![Class Diagram](/img/classes.jpg "Class Diagram")
 
 We did the analysis and we get the next diagrams.
 
+
 ### abstract class clsAccount:
 
 ![Class Diagram Account](/img/account.jpg "abstract class clsAccount")
 
+
 ### abstract class clsHuman:
 
 ![Class Diagram Human](/img/human.jpg "abstract class clsHuman")
+
 
 ### Class Diagram Developed:
 
 ![Class Diagram Developed](/img/Class_Diagram_StrategyPattern.jpg "Class Diagram Developed")
 
 We implemented with C# and Visual Studio the abstract classes account (clsAccount) and human (clsHuman) and all their offspring.
+
 
 ### Concepts.
 
@@ -56,12 +64,14 @@ We implemented with C# and Visual Studio the abstract classes account (clsAccoun
  
 Encapsulation implements Abstraction.
 
- #### Abstraction is -
+
+#### Abstraction is -
  
  * Showing Whats Necessary,
  * Data needs to abstract from End User,
  
 [What is the difference between Abstraction and Encapsulation ?](https://www.youtube.com/watch?v=1Q4I63-hKcY)
+ 
  
 #### Inheritance is -
 
@@ -111,6 +121,7 @@ The member in the parent class have to be marked with the *virtual* keyword.
             MessageBox.Show("an interest of : " + " " + vInterestPayment.ToString() + " $ " + " has been paid ");
             return base.fncDeposit(deposit);
         }
+		
 		
 #### Abstract is -		
 In a class declaration indicates that this class is going to be a super class, a base class of others classes.
@@ -199,24 +210,51 @@ Identify families of algorithms as a group technology, gather them and make them
 
 ### Prerequisites
 
- * Visual Studio.
- * Object-oriented programming.
+ * Microsoft Visual Studio Community 2015 Version 14.0.25425.01 Update 3
  * Programming language : C#.
+ * Object Oriented Programming.
+ 
+ 
+## Installation
+
+### Download and install. 
+
+ * [Install Visual Studio](https://visualstudio.microsoft.com/)
+ * [Dowland the MVC_ComboBox_selector project](https://github.com/RicardoAMendoza/The_NationalBank_Rm)
+ 
+ 
+## Author
+
+* **Ricardo Mendoza -  Programmer Analyst**
+ 
+ 
+ ## Running the tests
+ 
+ 
+ ## Built With
+
+* [Visual Studio](https://visualstudio.microsoft.com/)
 
 
 ## Versions and source manager. 
 
 This project uses GitHub.com as source manager in the following repository:
+
 https://github.com/RicardoAMendoza/The_NationalBank_Rm
 
 
-## Auteur
+## License
 
-* **Ricardo Mendoza** - *Analyste programmeur Jr* 
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-## Licence
-
-Ce projet utilise les licences suivantes:
 - Copyright Ricardo Mendoza
 - the MIT License (MIT)
+
+
+## Acknowledgments
+
+* [Andy Del Risco](https://www.linkedin.com/in/andydelriscomanzanares/) - MENTOR, *Technicien Informatique Cl. Principale* [École des métiers de l’aérospatiale de Montréal](http://ecole-metiers-aerospatiale.csdm.ca/)
+* [Fernand Tonye](https://www.linkedin.com/in/fernand-tonye-6a46532b/) - MENTOR, *Chief d'Equipe Informatique pour les enseignants* [Institut Teccart](http://www.teccart.qc.ca/)
+* [Charles Vilaisak](https://www.linkedin.com/in/cvilaisak/) - MENTOR, *Registraire à l'École nationale de cirque* [École nationale de cirque](https://www.linkedin.com/school/-cole-nationale-de-cirque/)
+* [Institut Teccart](http://www.teccart.qc.ca/)
 
